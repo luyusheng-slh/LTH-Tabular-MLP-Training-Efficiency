@@ -1,0 +1,50 @@
+{
+  "dataset": "taiwanese_bankruptcy",
+  "seed": 43,
+  "ticket_round": 1,
+  "selection": "fresh IMP validation-best ticket, nonzero pruning round",
+  "checkpoint_source": "same_fresh_IMP_dense_trajectory",
+  "same_trajectory_mask_and_checkpoint": true,
+  "rewind_step": 5,
+  "total_epochs": 53,
+  "hp": {
+    "scheduler": "none",
+    "layernorm": false,
+    "depth": 3,
+    "width": 140,
+    "lr": 0.00019762189340280086,
+    "weight_decay": 2.8585493941961875e-07,
+    "dropout": 0.30592644736118974,
+    "batch_size": 1024,
+    "epochs": 53
+  },
+  "target_val_accuracy": 0.957373572593801,
+  "accuracy_margin_pp": 1.0,
+  "dense_best_val_accuracy": 0.967373572593801,
+  "dense_final_test_accuracy": 0.9699930216329379,
+  "ticket_final_test_accuracy": 0.9692951849267272,
+  "test_accuracy_difference_pp": -0.06978367062107083,
+  "comparable_final_test_accuracy": true,
+  "dense_total_train_time_s": 0.3013887618435547,
+  "ticket_suffix_train_time_s": 0.2830748745473102,
+  "ticket_prefix_train_time_s": 0.04304580600000918,
+  "ticket_plus_prefix_total_train_time_s": 0.32612068054731935,
+  "training_time_ratio_with_prefix": 1.0820598570181676,
+  "training_time_ratio_suffix_only": 0.9392350027113788,
+  "dense_time_to_target": {
+    "iterations": 5,
+    "time_seconds": 0.04306809906847775,
+    "epoch": 1
+  },
+  "ticket_time_to_target": {
+    "iterations": 5,
+    "time_seconds": 0.044000389985740185,
+    "epoch": 1
+  },
+  "original_dense_final_test_accuracy": 0.9699930216329379,
+  "original_ticket_final_test_accuracy": 0.9692951849267272,
+  "gpu_name": "NVIDIA B200",
+  "torch_version": "2.12.0a0+5aff3928d8.nv26.05",
+  "python_version": "3.12.3",
+  "timing_note": "Training-loop wall-clock with CUDA synchronize. Includes mask operations and k-step prefix (estimated from replay dense); excludes validation and full IMP discovery cost. GPU warmed up before formal timing."
+}
