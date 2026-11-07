@@ -1,0 +1,50 @@
+{
+  "dataset": "APSFailure",
+  "seed": 44,
+  "ticket_round": 9,
+  "selection": "fresh IMP validation-best ticket, nonzero pruning round",
+  "checkpoint_source": "same_fresh_IMP_dense_trajectory",
+  "same_trajectory_mask_and_checkpoint": true,
+  "rewind_step": 92,
+  "total_epochs": 115,
+  "hp": {
+    "scheduler": "none",
+    "layernorm": false,
+    "depth": 1,
+    "width": 693,
+    "lr": 3.2562221090237234e-05,
+    "weight_decay": 1.5262733328044765e-06,
+    "dropout": 0.3584214810582834,
+    "batch_size": 256,
+    "epochs": 115
+  },
+  "target_val_accuracy": 0.9803535353535353,
+  "accuracy_margin_pp": 1.0,
+  "dense_best_val_accuracy": 0.9903535353535353,
+  "dense_final_test_accuracy": 0.9900865800865801,
+  "ticket_final_test_accuracy": 0.9902813852813853,
+  "test_accuracy_difference_pp": 0.01948051948051921,
+  "comparable_final_test_accuracy": true,
+  "dense_total_train_time_s": 2.3695898931473494,
+  "ticket_suffix_train_time_s": 2.4139238463249058,
+  "ticket_prefix_train_time_s": 0.049331091926433146,
+  "ticket_plus_prefix_total_train_time_s": 2.463254938251339,
+  "training_time_ratio_with_prefix": 1.039527956029379,
+  "training_time_ratio_suffix_only": 1.018709546873814,
+  "dense_time_to_target": {
+    "iterations": 40,
+    "time_seconds": 0.0219432869926095,
+    "epoch": 1
+  },
+  "ticket_time_to_target": {
+    "iterations": 40,
+    "time_seconds": 0.051211916957981884,
+    "epoch": 1
+  },
+  "original_dense_final_test_accuracy": 0.9900649350649351,
+  "original_ticket_final_test_accuracy": 0.9903896103896104,
+  "gpu_name": "NVIDIA B200",
+  "torch_version": "2.12.0a0+5aff3928d8.nv26.05",
+  "python_version": "3.12.3",
+  "timing_note": "Training-loop wall-clock with CUDA synchronize. Includes mask operations and k-step prefix (estimated from replay dense); excludes validation and full IMP discovery cost. GPU warmed up before formal timing."
+}
