@@ -1,0 +1,50 @@
+{
+  "dataset": "Fitness_Club",
+  "seed": 43,
+  "ticket_round": 11,
+  "selection": "fresh IMP validation-best ticket, nonzero pruning round",
+  "checkpoint_source": "same_fresh_IMP_dense_trajectory",
+  "same_trajectory_mask_and_checkpoint": true,
+  "rewind_step": 4,
+  "total_epochs": 106,
+  "hp": {
+    "scheduler": "none",
+    "layernorm": false,
+    "depth": 7,
+    "width": 131,
+    "lr": 0.0009002558731015149,
+    "weight_decay": 0.0009310204421836947,
+    "dropout": 0.3226559339410193,
+    "batch_size": 1024,
+    "epochs": 106
+  },
+  "target_val_accuracy": 0.7751851851851852,
+  "accuracy_margin_pp": 1.0,
+  "dense_best_val_accuracy": 0.7851851851851852,
+  "dense_final_test_accuracy": 0.7746031746031746,
+  "ticket_final_test_accuracy": 0.7746031746031746,
+  "test_accuracy_difference_pp": 0.0,
+  "comparable_final_test_accuracy": true,
+  "dense_total_train_time_s": 0.28978051361627877,
+  "ticket_suffix_train_time_s": 0.2924397122114897,
+  "ticket_prefix_train_time_s": 0.006521304021589458,
+  "ticket_plus_prefix_total_train_time_s": 0.29896101623307914,
+  "training_time_ratio_with_prefix": 1.0316808832389504,
+  "training_time_ratio_suffix_only": 1.0091765956310375,
+  "dense_time_to_target": {
+    "iterations": 86,
+    "time_seconds": 0.11885043070651591,
+    "epoch": 43
+  },
+  "ticket_time_to_target": {
+    "iterations": 82,
+    "time_seconds": 0.11747176048811525,
+    "epoch": 41
+  },
+  "original_dense_final_test_accuracy": 0.7777777777777778,
+  "original_ticket_final_test_accuracy": 0.7777777777777778,
+  "gpu_name": "NVIDIA B200",
+  "torch_version": "2.12.0a0+5aff3928d8.nv26.05",
+  "python_version": "3.12.3",
+  "timing_note": "Training-loop wall-clock with CUDA synchronize. Includes mask operations and k-step prefix (estimated from replay dense); excludes validation and full IMP discovery cost. GPU warmed up before formal timing."
+}

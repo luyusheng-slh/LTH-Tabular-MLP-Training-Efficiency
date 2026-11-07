@@ -1,0 +1,50 @@
+{
+  "dataset": "diabetes",
+  "seed": 43,
+  "ticket_round": 8,
+  "selection": "fresh IMP validation-best ticket, nonzero pruning round",
+  "checkpoint_source": "same_fresh_IMP_dense_trajectory",
+  "same_trajectory_mask_and_checkpoint": true,
+  "rewind_step": 8,
+  "total_epochs": 199,
+  "hp": {
+    "scheduler": "none",
+    "layernorm": false,
+    "depth": 8,
+    "width": 551,
+    "lr": 3.1624021445491244e-05,
+    "weight_decay": 2.626023274500306e-07,
+    "dropout": 0.2909825498583943,
+    "batch_size": 512,
+    "epochs": 199
+  },
+  "target_val_accuracy": 0.8015942028985508,
+  "accuracy_margin_pp": 1.0,
+  "dense_best_val_accuracy": 0.8115942028985508,
+  "dense_final_test_accuracy": 0.6975308641975309,
+  "ticket_final_test_accuracy": 0.6975308641975309,
+  "test_accuracy_difference_pp": 0.0,
+  "comparable_final_test_accuracy": true,
+  "dense_total_train_time_s": 0.6189662993419915,
+  "ticket_suffix_train_time_s": 0.64796302607283,
+  "ticket_prefix_train_time_s": 0.015283328131772578,
+  "ticket_plus_prefix_total_train_time_s": 0.6632463542046025,
+  "training_time_ratio_with_prefix": 1.0715387169054018,
+  "training_time_ratio_suffix_only": 1.04684702020395,
+  "dense_time_to_target": {
+    "iterations": 222,
+    "time_seconds": 0.3262837026268244,
+    "epoch": 111
+  },
+  "ticket_time_to_target": {
+    "iterations": 248,
+    "time_seconds": 0.4136897982098162,
+    "epoch": 124
+  },
+  "original_dense_final_test_accuracy": 0.6975308641975309,
+  "original_ticket_final_test_accuracy": 0.7098765432098766,
+  "gpu_name": "NVIDIA B200",
+  "torch_version": "2.12.0a0+5aff3928d8.nv26.05",
+  "python_version": "3.12.3",
+  "timing_note": "Training-loop wall-clock with CUDA synchronize. Includes mask operations and k-step prefix (estimated from replay dense); excludes validation and full IMP discovery cost. GPU warmed up before formal timing."
+}
